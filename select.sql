@@ -40,7 +40,19 @@ WHERE id = 1;
 
 SELECT * FROM students;
 
-SELECT * FROM students WHERE full_name = 'John Doe'
+-- SELECT * FROM students WHERE full_name = 'John Doe'
+
 
 SELECT * FROM students
 WHERE age > 20
+
+UPDATE students
+SET full_name = UPPER(full_name)
+WHERE full_name = 'John Doe';
+
+SELECT * FROM students upper(full_name)
+
+
+SELECT * FROM students WHERE full_name = 'Hannah Montana'
+
+SELECT * FROM students WHERE address = 'USA';
