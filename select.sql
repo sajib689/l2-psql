@@ -56,3 +56,22 @@ SELECT * FROM students upper(full_name)
 SELECT * FROM students WHERE full_name = 'Hannah Montana'
 
 SELECT * FROM students WHERE address = 'USA';
+
+SELECT * FROM students
+WHERE dob BETWEEN '20' AND '23' ORDER BY dob
+
+SELECT * FROM students
+WHERE phone LIKE '9876543210' OR phone LIKE '4567891230'; 
+
+SELECT * FROM students LIMIT 5;
+SELECT * FROM students OFFSET 5 LIMIT 5;
+
+SELECT * FROM students LIMIT 5 OFFSET 5*0;
+SELECT * FROM students LIMIT 5 OFFSET 5*1;
+
+DELETE FROM students
+WHERE blood_group IN ('A+');
+
+UPDATE students
+SET grade = 'A'
+WHERE full_name = 'George O’Malley';
