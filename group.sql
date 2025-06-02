@@ -28,4 +28,5 @@ INSERT INTO post (user_id, title, content) VALUES
 (2, 'User Post', 'This is a post by a regular user.'),
 (3, 'Guest Post', 'This is a post by a guest.');
 
-SELECT * FROM post;
+SELECT * FROM post
+WHERE user_id = 2;
